@@ -1,0 +1,21 @@
+import Head from "next/head";
+
+// import Components
+import Layout from "../src/Components/layout/layout";
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Imcon Ltd.</title>
+        <meta name="description" content="Imcon Company" />
+        <link rel="icon" href="/favicon.ico"/>
+      </Head>
+
+      <Layout >
+        
+      </Layout>
+    </>
+
+  );
+}

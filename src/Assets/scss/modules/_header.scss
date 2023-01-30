@@ -1,0 +1,128 @@
+.header {
+  -webkit-box-shadow: 0px 24px 39px -8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 24px 39px -8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 24px 39px -8px rgba(0, 0, 0, 0.2);
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    max-width: 123px;
+    width: 100%;
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    transition: 0.5s;
+    &:hover {
+      color: rgb(0, 0, 0);
+    }
+  }
+  &__phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin-right: 48px;
+  }
+  &__select {
+    padding: 8px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 33px;
+    font-size: 1.7vw;
+  }
+  &__bar{
+    display: none;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    &__menu {
+      column-gap: 20px;
+    }
+    &__link {
+      font-size: 1.7vw;
+    }
+    &__phone {
+      font-size: 1.7vw;
+      margin-right: 20px;
+    }
+    &__logo {
+      max-width: 100px;
+      width: 100%;
+    }
+    &__select {
+      padding: 5px 15px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    &__menu {
+      column-gap: 10px;
+      margin-right: 10px;
+    }
+    &__phone {
+      margin-right: 10px;
+    }
+    &__logo {
+      max-width: 90px;
+    }
+    &__select {
+      padding: 3px 12px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .header {
+    &__nav{
+      position: relative;
+    }
+    &__menu {
+      column-gap: 8px;
+      margin-right: 8px;
+    }
+    &__phone {
+      margin-right: 10px;
+    }
+    &__logo {
+      max-width: 60px;
+    }
+    &__link {
+      font-size: 1.6vw;
+    }
+    &__phone {
+      font-size: 1.6vw;
+    }
+    &__select {
+      padding: 3px 8px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+   &__wrapper{
+    display: none;
+   }
+   &__bar{
+    display: block;
+   }
+   &__active{
+    display: block;
+   }
+  }
+}
