@@ -5,8 +5,9 @@ import { useRef, useState } from "react";
 
 // import images
 import Cancel from "../../Assets/images/cancel.svg";
+import SocialList from "../socialList/socialList";
 
-function Modal({ active }) {
+function Modal({active, setActive}) {
   let modal = useRef();
   let btns = useRef();
 //   const [disable, setDisable] = useState(false)
@@ -14,9 +15,7 @@ function Modal({ active }) {
     <>
       <div className={!active ? "modal" : "modal modal--active"} ref={modal}>
         <button
-          className="modal__close"
-        //   onClick={()=> {!active ? modal.current.classList.remove('modal--active') : "modal"}}
-        >
+          className="modal__close" onClick={() => setActive(prev => !prev)}>
           <Image
             className="modal__cancel"
             src={Cancel}
@@ -66,6 +65,7 @@ function Modal({ active }) {
         <Link className="modal__phone" href={"tel:+998901234567"}>
           +998 90 123-45-67
         </Link>
+        <SocialList/>
       </div>
     </>
   );

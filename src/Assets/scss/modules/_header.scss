@@ -42,8 +42,12 @@
     font-size: 1.7vw;
   }
   &__bar{
-    display: none;
-    cursor: pointer;
+    &__btn{
+      display: none;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -115,14 +119,16 @@
     &__menu {
       display: none;
     }
-   &__wrapper{
-    display: none;
-   }
-   &__bar{
-    display: block;
-   }
-   &__active{
-    display: block;
-   }
+    &__wrapper{
+      display: none;
+    }
+    &__bar{
+      &__btn{
+        display: block;
+      }
+    }
+    &__active{
+      display: block;
+    }
   }
 }

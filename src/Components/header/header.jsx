@@ -6,41 +6,16 @@ import Link from 'next/link';
 import Logo from '../../Assets/images/imcon-logo.svg';
 import Bar from '../../Assets/images/bar.svg';
 import Modal from './modal';
+import HeaderNav from './headerNav';
 
 function Header() {
-  const [isactive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false)
   return (
     <div className="header__component">
       <div className="container">
         <nav className="header__nav">
           <Image className='header__logo' src={Logo} alt="logo" width={123} height={115} />
-          <ul className="header__menu">
-            <li className="header__item">
-              <Link className="header__link" href="#">
-                Company
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link className="header__link" href="#">
-                Services
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link className="header__link" href="#">
-                Portfolio
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link className="header__link" href="#">
-                Careers
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link className="header__link" href="#">
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <HeaderNav/>
           <div className="header__wrapper">
             <Link className='header__phone' href={'tel:+998901234567'}>+998 90 123-45-67</Link>
           <select name="lang-select" id="lang-select" className='header__select'>
@@ -48,10 +23,10 @@ function Header() {
             <option value="Ru">Ru</option>
           </select>
           </div>
-          <button onClick={() => setIsActive(prev => !prev)} >
+          <button className='header__bar__btn' onClick={() => setIsActive(prev => !prev)} >
           <Image className='header__bar' src={Bar} alt="logo" width={24} height={24} />
           </button>
-        <Modal active={isactive}/>
+        <Modal active={isActive} setActive={setIsActive}/>
         </nav>
       </div>
     </div>
