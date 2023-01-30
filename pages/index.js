@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Industries from "../src/Components/industries/industries";
 
 // import Components
 import Layout from "../src/Components/layout/layout";
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <Layout >
-        
+        <Industries/>
       </Layout>
     </>
 

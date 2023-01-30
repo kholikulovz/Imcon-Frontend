@@ -1,0 +1,126 @@
+.industries{
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    &__wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    &__textbox{
+        max-width: 450px;
+        width: 100%;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 133%;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__side{
+        max-width: 510px;
+        width: 100%;
+        &__title{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 133%;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+        &__list{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            column-gap: 54px;
+        }
+        &__number{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+        }
+        &__text{
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 133%;
+            color: #000000;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .industries{
+        padding: 60px 0;
+        &__wrapper{
+            justify-content: space-between;
+        }
+        &__textbox{
+            max-width: 350px;
+            width: 100%;
+        }
+        &__title{
+            font-size: 48px;
+            line-height: 60px;
+        }
+        &__side{
+            max-width: 420px;
+            width: 100%;
+            &__item{
+                column-gap: 30px;
+            }
+            &__title{
+                font-size: 36px;
+                line-height: 60px;
+                margin-bottom: 30px;
+            }
+            &__number{
+                font-size: 20px;
+                line-height: 36px;
+            }
+            &__text{
+                font-size: 24px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .industries{
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__textbox{
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .industries{
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        &__textbox{
+            display: none;
+        }
+    }
+}
