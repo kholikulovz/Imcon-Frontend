@@ -14,7 +14,7 @@ function FooterContact() {
             <li className="footer__contact__item">
               <h4 className="footer__contact__title">Manzil:</h4>
               <p className="footer__contact__text">
-                Besh og‘och, Furqat ko‘chasi, Toshkent
+                Besh og`och, Furqat ko`chasi, Toshkent
               </p>
             </li>
           </ul>

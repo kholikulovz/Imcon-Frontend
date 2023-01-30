@@ -64,10 +64,10 @@ function Footer() {
             </div>
           <FooterNav/>
           <FooterContact/>
-          <h3 className="footer__title">Biz bilan bog'lanish</h3>
+          <h3 className="footer__title">Biz bilan bog`lanish</h3>
         </nav>
         <div className="footer__bottom">
-          <p className="footer__bottom__text">2022 O'zbekiston brendi. Barcha huquqlar himoyalangan.</p>
+          <p className="footer__bottom__text">2022 O`zbekiston brendi. Barcha huquqlar himoyalangan.</p>
         </div>
       </div>
     </div>
