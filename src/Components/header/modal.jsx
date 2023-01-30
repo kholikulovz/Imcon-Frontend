@@ -29,7 +29,7 @@ function Modal({active, setActive}) {
             Eng
           </button>
           <button className="modal__lang" disabled={true}>
-            O'zb
+            O`zb
           </button>
           <button className="modal__lang" disabled={true}>
             Rus
